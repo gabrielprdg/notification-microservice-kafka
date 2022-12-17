@@ -1,7 +1,6 @@
-import { timeStamp } from 'node:console';
-import { Replace } from '../../../src/helpers/replace';
-import { Content } from './content';
 import { randomUUID } from 'node:crypto';
+import { Replace } from '@helpers/replace';
+import { Content } from './content';
 
 export interface NotificationModel {
   recipientId: string;
