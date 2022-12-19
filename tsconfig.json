@@ -10,6 +10,7 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "resolveJsonModule": true,
     "incremental": true,
     "skipLibCheck": true,
     "strict": true,
@@ -23,7 +24,7 @@
       "@application/*": ["./src/application/*"],
       "@helpers/*": ["./src/helpers/*"],
       "@infra/*": ["./src/infra/*"],
-      "@test/*": ["./test/*"],
+      "@test/*": ["./test/*"]
     }
   }
 }

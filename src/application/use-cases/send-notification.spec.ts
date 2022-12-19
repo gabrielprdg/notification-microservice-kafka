@@ -1,33 +1,5 @@
 import { InMemoryNotificationRepository } from '../../../test/repositories/in-memory-notification-repository';
-import { Notification } from '../entities/notification';
-import { NotificationRepository } from '../protocols/db/notification/notifications-repository';
 import { SendNotification } from './send-notification';
-
-const mockNotificationRepository = () => {
-  class NotificationRepositoryStub implements NotificationRepository {
-    async create(notification: Notification): Promise<void> {
-      return Promise.resolve();
-    }
-  }
-
-  return new NotificationRepositoryStub();
-};
-
-//sut -> System Under Test
-type SutTypes = {
-  sut: SendNotification;
-  notificationRepositoryStub: NotificationRepository;
-};
-
-const makeSut = (): SutTypes => {
-  const notificationRepositoryStub = mockNotificationRepository();
-  const sut = new SendNotification(notificationRepositoryStub);
-
-  return {
-    notificationRepositoryStub,
-    sut,
-  };
-};
 
 describe('SendNotification', () => {
   it('Should be able to send notification', async () => {
