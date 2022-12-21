@@ -41,8 +41,8 @@ $ npm run start
 # watch mode
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
+# docker 
+$ sudo docker compose up
 ```
 
 ## Test
