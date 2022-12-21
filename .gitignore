@@ -2,6 +2,9 @@
 /dist
 /node_modules
 /data
+/data/kafka
+/data/kafka1
+/data/zookeper
 /dist
 
 # Logs
